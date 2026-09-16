@@ -22,6 +22,7 @@ void main(){
 LocalDateTime hoyHora = LocalDateTime.now();
     try (FileWriter fw = new FileWriter("./Conversaciones.txt", true)) {
         String registro="<--> Dia "+hoyHora.toString()+" <-->";
+        fw.write(registro);
         String m="";
         while(!m.toLowerCase().equals("fin")){
         String mensaje = br.readLine();

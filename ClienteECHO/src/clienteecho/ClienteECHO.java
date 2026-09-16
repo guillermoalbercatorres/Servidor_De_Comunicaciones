@@ -15,10 +15,6 @@ import java.util.Scanner;
  * @author guillermo
  */
 public class ClienteECHO {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
     try (Socket s = new Socket("192.168.21.4",10000);
             Scanner t = new Scanner(System.in);
