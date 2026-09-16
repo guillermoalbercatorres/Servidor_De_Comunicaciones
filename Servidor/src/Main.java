@@ -18,17 +18,28 @@ void main(){
             // Recibimos del mensaje procedent del cliente
 
             //Leemos el mensaje
-while(true){
 
-            String mensaje = br.readLine();
-            System.out.println("Mensaje recibido : " + mensaje);
-            String m = t.nextLine();
-            bw.write("Respuesta del servidor : " + m);
-            bw.newLine();
-            bw.flush();
-            System.out.println("Respuesta enviada.");
-    System.out.println("Escribiendo....");
+LocalDateTime hoyHora = LocalDateTime.now();
+    try (FileWriter fw = new FileWriter("./Conversaciones.txt", true)) {
+        String registro="<--> Dia "+hoyHora.toString()+" <-->";
+        String m="";
+        while(!m.toLowerCase().equals("fin")){
+        String mensaje = br.readLine();
+        fw.write("Mensaje recibido : " + mensaje+"\n");
+        System.out.println("Mensaje recibido : " + mensaje);
+
+        m = t.nextLine();
+            fw.write("Tu -> "+m+"\n");
+        bw.write("Respuesta del servidor : " + m);
+        bw.newLine();
+        bw.flush();
+        System.out.println("Respuesta enviada.");
         }
+        System.out.println("Archivo escrito correctamente.");
+    } catch (IOException e) {
+        System.out.println("Error al escribir en el archivo: " + e.getMessage());
+    }
+    System.out.println("Escribiendo....");
         } catch (IOException e) {
             System.out.println("Problemas a la hora de recibir y transmitir los datos del cliente");
         }

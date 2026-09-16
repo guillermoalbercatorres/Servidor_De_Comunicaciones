@@ -4,13 +4,10 @@
  */
 package clienteecho;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.time.LocalDateTime;
 import java.util.Scanner;
 
 /**
@@ -23,22 +20,32 @@ public class ClienteECHO {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-    try (Socket s = new Socket("127.0.0.1",10000);
+    try (Socket s = new Socket("192.168.21.4",10000);
             Scanner t = new Scanner(System.in);
          BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
     BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
     ){
 
         // Enviamos un mensaje eal servidor
-        while(true){
-String m = t.nextLine();
-bw.write(m);
-bw.newLine();
-bw.flush();
+        LocalDateTime hoyHora = LocalDateTime.now();
+        try (FileWriter fw = new FileWriter("./Conversaciones.txt", true)) {
+            String registro="<--> Dia "+hoyHora.toString()+" <-->";
+            String m="";
+            while(!m.toLowerCase().equals("fin")){
+                m = t.nextLine();
+                fw.write("Tu -> "+m+"\n");
+                bw.write(m);
+                bw.newLine();
+                bw.flush();
 // Recibimoss la respuesta
-System.out.println("Escribiendo...");
-        String respuesta = br.readLine();
-        System.out.println("Servidor -> "+respuesta);
+                System.out.println("Escribiendo...");
+                String respuesta = br.readLine();
+                System.out.println("Servidor -> "+respuesta);
+                fw.write("Servidor -> "+respuesta+"\n");
+            }
+            System.out.println("Archivo escrito correctamente.");
+        } catch (IOException e) {
+            System.out.println("Error al escribir en el archivo: " + e.getMessage());
         }
     } catch (UnknownHostException e) {
         throw new RuntimeException(e);

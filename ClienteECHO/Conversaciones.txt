@@ -1,0 +1,27 @@
+Tu -> a
+Servidor -> Respuesta del servidor : que
+Tu -> hola buenos dia
+Servidor -> Respuesta del servidor : hola
+Tu -> ns
+Servidor -> Respuesta del servidor : fin
+Tu -> fin
+Servidor -> null
+Tu -> dghsfshdgjf gsd
+Servidor -> Respuesta del servidor : jhsdgf sgdf
+Tu -> hsdgfjsgdf
+Servidor -> Respuesta del servidor : dshgfjsdkgf
+Tu -> fin
+Servidor -> Respuesta del servidor : fin
+Tu -> Perrooo sancheee
+Servidor -> Respuesta del servidor : Hijo de puta pedro sancheeeeee
+Tu -> basi esta jugando al candy crush
+Servidor -> Respuesta del servidor : no jodas , que nivel va
+Tu -> parece mi madre
+Servidor -> Respuesta del servidor : jajajaja
+Tu -> a que no sabes quien soy? 
+Servidor -> Respuesta del servidor : nop
+Tu -> pues david,quien sere
+Servidor -> Respuesta del servidor : fin
+Tu -> hola
+Servidor -> null
+Tu -> dafdasdfdaws
