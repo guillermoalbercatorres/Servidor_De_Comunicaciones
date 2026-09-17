@@ -2,3 +2,15 @@ Mensaje recibido : Hola que tal estas campeon
 Tu -> bien cabroncete
 Mensaje recibido : fin
 Tu -> fin
+<--> Dia 2026-09-16T17:54:07.787171224 <-->Mensaje recibido : Hola señor 
+Tu -> Hola
+Mensaje recibido : AAAAA
+Tu -> fddhd ñg
+Mensaje recibido : sgsdfsf
+Tu -> sgsghdfgfgds gf
+Mensaje recibido : dfsdfsdf
+Tu -> s djfhñsdf
+Mensaje recibido : afsdafad
+Tu -> 
+Mensaje recibido : fin
+Tu -> fin
