@@ -14,3 +14,16 @@ Mensaje recibido : afsdafad
 Tu -> 
 Mensaje recibido : fin
 Tu -> fin
+<--> Dia 2026-09-17T09:27:20.184228189 <-->Mensaje recibido : Hola Señor
+Tu -> 
+Mensaje recibido : null
+Tu -> 
+Mensaje recibido : null
+Tu -> 
+<--> Dia 2026-09-17T09:59:19.263562821 <-->Mensaje recibido : Hola
+Tu -> Hola
+Mensaje recibido : null
+Tu -> Hola
+Mensaje recibido : null
+Tu -> Hola
+<--> Dia 2026-09-17T10:09:27.977935238 <--><--> Dia 2026-09-17T10:11:03.437984784 <--><--> Dia 2026-09-17T10:11:48.838588625 <--><--> Dia 2026-09-17T10:13:46.319461284 <--><--> Dia 2026-09-17T10:15:13.030504121 <--><--> Dia 2026-09-17T10:17:31.878902856 <-->

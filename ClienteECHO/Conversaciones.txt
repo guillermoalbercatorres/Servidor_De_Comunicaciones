@@ -25,3 +25,11 @@ Servidor -> Respuesta del servidor : fin
 Tu -> hola
 Servidor -> null
 Tu -> dafdasdfdaws
+Tu -> Hola
+Servidor -> null
+Tu -> hola
+Servidor -> null
+Tu -> 
+Tu -> Hola
+Servidor -> null
+Tu -> Hola

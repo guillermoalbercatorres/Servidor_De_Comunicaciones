@@ -16,7 +16,7 @@ import java.util.Scanner;
  */
 public class ClienteECHO {
     public static void main(String[] args) {
-    try (Socket s = new Socket("192.168.21.4",10000);
+    try (Socket s = new Socket("127.0.0.1",10000);
             Scanner t = new Scanner(System.in);
          BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
     BufferedReader br = new BufferedReader(new InputStreamReader(s.getInputStream()));
